@@ -31,10 +31,19 @@ canvas.pack()
 frame = tk.Frame(root, bg="white")
 frame.place(relwidth=0.8, relheight=0.8, relx=0.1, rely=0.1)
 
-openFile = tk.Button(frame, text="Open Files", padx=10, pady=5, fg='white', bg='blue', command=addApp)
-openFile.pack()
+box1 = tk.Frame(frame, bg='red')
+box1.place(relwidth=0.5, relheight=0.5)
 
-runApp = tk.Button(frame, text="RunApps", padx=10, pady=5, fg='white', bg='blue')
-runApp.pack()
+box2 = tk.Frame(frame, bg='blue')
+box2.place(relwidth=0.5, relheight=0.5, rely=0.5)
+
+box3 = tk.Frame(frame, bg='green')
+box3.place(relwidth=0.5, relheight=0.5, relx=0.5)
+
+box4 = tk.Frame(frame, bg='yellow')
+box4.place(relwidth=0.5, relheight=0.5, relx=0.5, rely=0.5)
+
+openFile = tk.Button(root, text="Open Files", padx=10, pady=5, fg='white', bg='#2f2d2c', command=addApp)
+openFile.pack()
 
 root.mainloop()
